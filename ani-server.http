@@ -1,0 +1,6 @@
+@ani_server_HostAddress = http://localhost:5068
+
+GET {{ani_server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
