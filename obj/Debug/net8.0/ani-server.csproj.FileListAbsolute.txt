@@ -169,3 +169,9 @@ C:\Users\Hp\Desktop\HotChocolate\AniSave\ani-server\obj\Debug\net8.0\ref\ani-ser
 C:\Users\Hp\Desktop\HotChocolate\AniSave\ani-server\bin\Debug\net8.0\AutoMapper.dll
 C:\Users\Hp\Desktop\HotChocolate\AniSave\ani-server\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\Hp\Desktop\HotChocolate\AniSave\ani-server\bin\Debug\net8.0\web.config
+C:\Users\Hp\Desktop\HotChocolate\AniSave\ani-server\bin\Debug\net8.0\publish\web.config
+C:\Users\Hp\Desktop\HotChocolate\AniSave\ani-server\bin\Debug\net8.0\publish\ani-server.deps.json
+C:\Users\Hp\Desktop\HotChocolate\AniSave\ani-server\bin\Debug\net8.0\publish\ani-server.runtimeconfig.json
+C:\Users\Hp\Desktop\HotChocolate\AniSave\ani-server\bin\Debug\net8.0\publish\appsettings.Development.json
+C:\Users\Hp\Desktop\HotChocolate\AniSave\ani-server\bin\Debug\net8.0\publish\appsettings.json
+C:\Users\Hp\Desktop\HotChocolate\AniSave\ani-server\obj\Debug\net8.0\ani-server.sourcelink.json

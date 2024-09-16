@@ -40,16 +40,16 @@ builder.Services.AddGraphQLServer()
         .AddFiltering();
 
     
-// builder.Services.AddCors(options =>
-// {
-//     options.AddDefaultPolicy(builder =>
-//     {
-//         builder.AllowAnyHeader()
-//                .AllowAnyMethod()
-//                .AllowCredentials()
-//                .WithOrigins("http://localhost:4200");
-//     });
-// });
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(builder =>
+    {
+        builder.AllowAnyHeader()
+               .AllowAnyMethod()
+               .AllowCredentials()
+               .WithOrigins("http://localhost:4200");
+    });
+});
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
