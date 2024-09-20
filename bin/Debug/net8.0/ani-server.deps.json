@@ -12,7 +12,7 @@
           "HotChocolate.AspNetCore": "13.9.6",
           "HotChocolate.AspNetCore.Authorization": "13.9.6",
           "HotChocolate.Data.EntityFramework": "13.9.6",
-          "Microsoft.AspNetCore.OpenApi": "8.0.4",
+          "Microsoft.AspNetCore.OpenApi": "8.0.2",
           "Microsoft.EntityFrameworkCore.Design": "8.0.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.6",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.6",
@@ -441,14 +441,14 @@
           }
         }
       },
-      "Microsoft.AspNetCore.OpenApi/8.0.4": {
+      "Microsoft.AspNetCore.OpenApi/8.0.2": {
         "dependencies": {
           "Microsoft.OpenApi": "1.4.3"
         },
         "runtime": {
           "lib/net8.0/Microsoft.AspNetCore.OpenApi.dll": {
-            "assemblyVersion": "8.0.4.0",
-            "fileVersion": "8.0.424.17014"
+            "assemblyVersion": "8.0.2.0",
+            "fileVersion": "8.0.224.6804"
           }
         }
       },
@@ -1557,12 +1557,12 @@
       "path": "humanizer.core/2.14.1",
       "hashPath": "humanizer.core.2.14.1.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.OpenApi/8.0.4": {
+    "Microsoft.AspNetCore.OpenApi/8.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-TFiXbP0tqRgJKcpiCSSp79q6QaiF8gqRhZgrU48FQajhVkiwHSp1O1b1hkYC4Ehl4clbk3pHwdfwN9mRtDAFbQ==",
-      "path": "microsoft.aspnetcore.openapi/8.0.4",
-      "hashPath": "microsoft.aspnetcore.openapi.8.0.4.nupkg.sha512"
+      "sha512": "sha512-59xQBsH+2at3+rrLazCNbaLhS1gmMY2fT1rSxa116EQ2oCbdULerytaYtr0h5iew+BVwJZNsWgvU3fOpt74DCA==",
+      "path": "microsoft.aspnetcore.openapi/8.0.2",
+      "hashPath": "microsoft.aspnetcore.openapi.8.0.2.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
       "type": "package",

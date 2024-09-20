@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ani-server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+42a03b82cadda489a127c32a5d7edebaea3a6d96")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1c8bd5f8287159457d90fd456bcb23ed2bfd7edf")]
 [assembly: System.Reflection.AssemblyProductAttribute("ani-server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ani-server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
