@@ -3,6 +3,7 @@ using ani_server.DataBaseContext;
 using ani_server.GraphQl;
 using ani_server.Heplers;
 using ani_server.Interfaces;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.FileProviders;
 
@@ -18,9 +19,13 @@ builder.Services.AddTransient<ICharacter,CharacterDataAccessLayer>();
 // var dbPassword =  Environment.GetEnvironmentVariable("DB_SA_PASSWORD");
 // var connectionString = $"Data Source={dbHost};Initial Catalog={dbName};User ID=sa;Password={dbPassword}";
 
-builder.Services.AddDbContextFactory<AniSaveDbContext>(options =>{
-     var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-
+builder.Services.AddDbContextFactory<AniSaveDbContext>(options =>
+{
+    
+     SqlAuthenticationProvider.SetProvider(
+        SqlAuthenticationMethod.ActiveDirectoryDeviceCodeFlow,
+        new CustomAzureSqlAuthProvider());
+    var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
     options.UseSqlServer(connectionString, sqlServerOptions =>
     {
         sqlServerOptions.EnableRetryOnFailure(
