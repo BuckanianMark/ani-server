@@ -46,7 +46,7 @@ builder.Services.AddCors(options =>
         builder.AllowAnyHeader()
                .AllowAnyMethod()
                .AllowCredentials()
-               .WithOrigins("http://localhost:4200","https://anisaveclient.vercel.app");
+               .WithOrigins("https://anisaveclient.vercel.app");
     });
 });
 
