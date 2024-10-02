@@ -14,6 +14,7 @@ namespace ani_server.Dto
         public string Title { get; set; }
         public string Genre { get; set; }
         public string Overview { get; set; }
+        public string PreviewUrl { get; set; }
         public int Duration { get; set; }
         public string PosterPath { get; set; }
     }

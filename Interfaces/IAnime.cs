@@ -10,5 +10,6 @@ namespace ani_server.Interfaces
         Task AddAnime(AnimeRequestDto anime);
         Task<List<Genre>> GetGenre();
         Task<List<Anime>> GetAllAnimes();
+        Task<List<Anime>> GetSimilarAnimes(int animeId);
     }
 }

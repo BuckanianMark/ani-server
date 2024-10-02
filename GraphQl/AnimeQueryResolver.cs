@@ -20,7 +20,7 @@ namespace ani_server.GraphQl
         {
             return await _animeService.GetGenre();
         }
-        [GraphQLDescription("Get the list of Movies")]
+        [GraphQLDescription("Get the list of Animes")]
         [UseFiltering]
         public async Task<IQueryable<Anime>> GetAnimeList()
         {

@@ -29,8 +29,7 @@ namespace ani_server.DataAccess
             await _dbContext.SaveChangesAsync();
            }
            catch (System.Exception)
-           {
-            
+           {   
             throw;
            }
         }
@@ -53,6 +52,11 @@ namespace ani_server.DataAccess
            
                 return await _dbContext.Animes.Include(a => a.Characters).AsNoTracking().ToListAsync();
           
+        }
+
+        public Task<List<Anime>> GetSimilarAnimes(int animeId)
+        {
+            throw new NotImplementedException();
         }
     }
 }

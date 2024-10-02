@@ -19,20 +19,14 @@ builder.Services.AddTransient<ICharacter,CharacterDataAccessLayer>();
 // var dbPassword =  Environment.GetEnvironmentVariable("DB_SA_PASSWORD");
 // var connectionString = $"Data Source={dbHost};Initial Catalog={dbName};User ID=sa;Password={dbPassword}";
 
-builder.Services.AddDbContextFactory<AniSaveDbContext>(options =>
+builder.Services.AddEntityFrameworkNpgsql().AddDbContextFactory<AniSaveDbContext>(options =>
 {
     
-     SqlAuthenticationProvider.SetProvider(
-        SqlAuthenticationMethod.ActiveDirectoryDeviceCodeFlow,
-        new CustomAzureSqlAuthProvider());
+    //  SqlAuthenticationProvider.SetProvider(
+    //     SqlAuthenticationMethod.ActiveDirectoryDeviceCodeFlow,
+    //     new CustomAzureSqlAuthProvider());
     var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-    options.UseSqlServer(connectionString, sqlServerOptions =>
-    {
-        sqlServerOptions.EnableRetryOnFailure(
-            maxRetryCount: 5,                  
-            maxRetryDelay: TimeSpan.FromSeconds(30), 
-            errorNumbersToAdd: null);          
-    });
+    options.UseNpgsql(connectionString);
 
     options.LogTo(Console.WriteLine); 
 });
