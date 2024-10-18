@@ -9,6 +9,7 @@ namespace ani_server.Heplers
         public MappingProfiles()
         {           
         CreateMap<AnimeRequestDto,Anime>();
+        CreateMap<RegisterRequestDto,UserMaster>();
 
         }
     }

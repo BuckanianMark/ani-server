@@ -17,7 +17,6 @@ namespace ani_server.Models
 
     public string Password { get; set; } = null!;
 
-    public string Gender { get; set; } = null!;
 
     public List<WatchListItems> WatchListItems = new List<WatchListItems>();
     }
