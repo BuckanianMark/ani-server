@@ -17,7 +17,8 @@ namespace ani_server.DataAccess
         }
         public bool CheckUserNameAvailability(string username)
         {
-            throw new NotImplementedException();
+            string user = _dbcontext.UserMasters.FirstOrDefault(x => x.Username == username)?.ToString();
+            return user == null;
         }
 
         public Task LoginUser(LoginRequestDto user)
@@ -25,9 +26,26 @@ namespace ani_server.DataAccess
             throw new NotImplementedException();
         }
 
-        public Task<bool> RegisterUser(UserMaster user)
+        public async Task<bool> RegisterUser(UserMaster user)
         {
-            throw new NotImplementedException();
+            bool isUserNameAvailable = CheckUserNameAvailability(user.Username);
+            try
+            {
+                if(isUserNameAvailable)
+                {
+                    await _dbcontext.UserMasters.AddAsync(user);
+                    await _dbcontext.SaveChangesAsync();
+                    return true;
+                }
+                else{
+                    return false;
+                }
+            }
+            catch (System.Exception)
+            {
+                
+                throw;
+            }
         }
     }
 }

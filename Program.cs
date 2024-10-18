@@ -13,6 +13,7 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddTransient<IAnime, AnimeDataAccessLayer>();
 builder.Services.AddTransient<ICharacter,CharacterDataAccessLayer>();
+builder.Services.AddTransient<IUser,UserDataAccessLayer>();
 
 // var dbHost = Environment.GetEnvironmentVariable("DB_HOST");
 // var dbName =  Environment.GetEnvironmentVariable("DB_NAME");
@@ -35,6 +36,7 @@ builder.Services.AddAutoMapper(typeof(MappingProfiles));
 builder.Services.AddGraphQLServer()
         .AddQueryType<AnimeQueryResolver>()
         .AddMutationType<AnimeMutationResolver>()
+        .AddTypeExtension<UserMutationResolver>()
         .AddTypeExtension<CharacterMutationResolver>()
         .AddFiltering();
 
