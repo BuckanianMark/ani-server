@@ -3,7 +3,7 @@ using ani_server.DataBaseContext;
 using ani_server.GraphQl;
 using ani_server.Heplers;
 using ani_server.Interfaces;
-using Microsoft.Data.SqlClient;
+//using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.FileProviders;
 
